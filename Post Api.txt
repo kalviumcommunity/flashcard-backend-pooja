@@ -1,0 +1,101 @@
+server.js (✅ your backend entry file)
+
+package.json (✅ project is initialized)
+
+node_modules (✅ dependencies installed)
+
+1. Create a New Git Branch
+Open terminal (inside your backend folder):
+
+git checkout -b post-api-endpoint
+
+
+Step 1: Go to the correct project folder
+In terminal:
+
+bash
+Copy
+Edit
+cd C:\Users\POOJA\S301_Pooja_Capstone_FlashCardStudyApp
+✅ This should be the folder that is already linked to your GitHub repo.
+
+🔹 Step 2: Switch to main and pull latest
+bash
+Copy
+Edit
+git checkout main
+git pull origin main
+✅ This ensures you’re on the latest clean version of main.
+
+🔹 Step 3: Create a new branch for your POST API
+bash
+Copy
+Edit
+git checkout -b new-post-api-endpoint
+✅ This branch is now created from main, so GitHub will allow comparisons.
+
+🔹 Step 4: Copy your POST API code to this branch
+Now do this manually in File Explorer or VS Code:
+
+Copy the working server.js, index.js, package.json, etc. from your old backend folder (where POST API is working)
+
+Paste those files into this current folder:
+
+makefile
+Copy
+Edit
+C:\Users\POOJA\S301_Pooja_Capstone_FlashCardStudyApp\backend
+🔹 Step 5: Add and commit your code
+In terminal:
+
+bash
+Copy
+Edit
+cd backend
+git add .
+git commit -m "Added POST API for flashcards"
+🔹 Step 6: Push this new branch to GitHub
+bash
+Copy
+Edit
+git push origin new-post-api-endpoint
+🔹 Step 7: Create a Pull Request on GitHub
+Go to:
+https://github.com/kalviumcommunity/S301_Pooja_Capstone_FlashCardStudyApp
+
+Click Pull Requests → New Pull Request
+
+Set:
+
+base = main
+
+compare = new-post-api-endpoint
+
+You will now see your POST API code changes 🎉
+
+🔹 Step 8: Fill in the PR details
+Title:
+rust
+Copy
+Edit
+Added POST API Endpoint for Flashcards
+Description:
+pgsql
+Copy
+Edit
+This PR implements a POST API at `/api/cards` to allow users to add flashcards dynamically.
+
+✅ Uses express.json() middleware  
+✅ Validates that subject, question, and answer are present  
+✅ Responds with the created flashcard object  
+✅ Tested successfully using Postman
+CodiumAI Review:
+Paste this in the PR comment box:
+
+bash
+Copy
+Edit
+@CodiumAI-Agent /review
+✅ Then click “Create Pull Request”
+
+                       https://github.com/kalviumcommunity/S301_Pooja_Capstone_FlashCardStudyApp/pull/13
