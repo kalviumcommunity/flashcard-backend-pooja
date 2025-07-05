@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const flashcardsRoutes = require("./flashcards"); // Route file
+const flashcardsRoutes = require("./flashcard"); // Route file
 
 const app = express();
 const PORT = 5000;
